@@ -1,0 +1,102 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="vendor/jquery-mobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jknns.min.css" />
+  		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jquery.mobile.icons.min.css" />
+		<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+		<script src="vendor/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+
+		<div data-role="header">
+	    	<h1>Form</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<!-- 
+				To stop jQuery Mobile from running its own AJAX sumbission, 
+				put `data-ajax="false"` on in form tag 
+			-->
+		  	<form id="main-form" data-ajax="false" action="dump.php" method="POST">
+
+		  		<label for="main-input-text">Text:</label>
+		  		<input type="text" name="main-input-text" id="main-input-text" placeholder="Insert your text..." value="">
+
+		  		<label for="main-input-password">Password:</label>
+		  		<input type="password" name="main-input-password" id="main-input-password" placeholder="Insert your password..." value="">
+
+		  		<label for="main-input-search">Search:</label>
+		  		<input type="search" name="main-input-search" id="main-input-search" placeholder="Insert your search text..." value="">
+
+		  		<label for="main-input-textarea">Text Area:</label>
+		  		<textarea rows="8" cols="40" name="main-input-textarea" id="main-input-textarea" placeholder="Insert your textarea text..." value=""></textarea>
+
+		  		<fieldset data-role="controlgroup">
+		  			<legend>Single Checkbox</legend>
+		  			<label for="main-input-checkbox">I agree with T&amp;C</label>
+		  			<input type="checkbox" name="main-input-checkbox" id="main-input-checkbox">
+		  		</fieldset>
+
+		  		<fieldset data-role="controlgroup">
+		  			<legend>In Vertical Group</legend>
+		  			<label for="main-input-checkbox-one">One</label>
+		  			<input type="checkbox" name="main-input-checkbox-one" id="main-input-checkbox-one">
+		  			<label for="main-input-checkbox-two">Two</label>
+		  			<input type="checkbox" name="main-input-checkbox-two" id="main-input-checkbox-two">
+		  			<label for="main-input-checkbox-three">Three</label>
+		  			<input type="checkbox" name="main-input-checkbox-three" id="main-input-checkbox-three">
+		  		</fieldset>
+
+		  		<fieldset data-role="controlgroup">
+		  			<legend>Single Radio</legend>
+		  			<label for="main-input-radio">I agree with T&amp;C</label>
+		  			<input type="radio" name="main-input-radio" id="main-input-radio">
+		  		</fieldset>
+
+		  		<fieldset data-role="controlgroup">
+		  			<legend>In Vertical Group</legend>
+		  			<label for="main-input-radio-one">One</label>
+		  			<input type="radio" name="main-input-radio-group" id="main-input-radio-one">
+		  			<label for="main-input-radio-two">Two</label>
+		  			<input type="radio" name="main-input-radio-group" id="main-input-radio-two">
+		  			<label for="main-input-radio-three">Three</label>
+		  			<input type="radio" name="main-input-radio-group" id="main-input-radio-three">
+		  		</fieldset>
+
+		  		<label for="main-input-select">Select One:</label>
+		  		<select name="main-input-select" id="main-input-select">
+		  			<option>A.1</option>
+	  				<option>A.2</option>
+	  				<option>A.3</option>
+		  		</select>
+
+		  		<label for="main-input-select-multiple">Select Mulitple:</label>
+		  		<select multiple="multiple" data-native-menu="false" name="main-input-select-multiple" id="main-input-select-multiple">
+		  			<option>Please select one</option>
+	  				<option>A.2</option>
+	  				<option>A.3</option>
+	  				<option>A.4</option>
+	  				<option>A.5</option>
+	  				<option>A.6</option>
+		  		</select>
+
+		  		<label for="main-input-flip-toggle">Toggle:</label>
+		  		<select name="main-input-flip-toggle" id="main-input-flip-toggle" data-role="slider">
+	  				<option>No</option>
+	  				<option>Yes</option>
+		  		</select>
+
+		  		<label for="main-submit">Submit Form</label>
+		  		<button class="ui-shadow ui-btn" type="submit">Submit</button>
+
+		  	</form>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+		  <h1>Training@INTIM April 2015</h1>
+		</div>
+		
+	</body>
+</html>

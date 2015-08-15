@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="vendor/jquery-mobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jknns.min.css" />
+  		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jquery.mobile.icons.min.css" />
+		<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+		<script src="vendor/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" id="pageone">
+			<!-- Web Mobile: Header -->
+			<div data-role="header">
+		    	<h1>my app!</h1>
+			</div>
+
+			<!-- Web Mobile: Content -->
+			<div data-role="main" class="ui-content" data-them="c">
+			  <p id="paragraph" style="text-align: center">Yahooo!</p>
+			  <input type="text" placeholder="say something">
+			</div>
+
+			<!-- Web Mobile: Footer -->
+			<div data-role="footer" data-position="fixed">
+			  <h1>Training</h1>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).on("pagecreate","#pageone",function(){
+			   // jQuery events go here...
+			   alert('Hello. I\'m from Republic of Besut.');
+			});
+
+			jQuery(document).ready(function($) {
+				
+			});
+		</script>
+		
+	</body>
+</html>

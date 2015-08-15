@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="vendor/jquery-mobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/jquery-mobile/themes/kejora/kejora.min.css" />
+  		<link rel="stylesheet" href="vendor/jquery-mobile/themes/kejora/jquery.mobile.icons.min.css" />
+		<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+		<script src="vendor/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+
+	<div data-role="page" id="page-one">
+		<!-- Web Mobile: Header -->
+		<div data-role="header">
+	    	<h1>my app!</h1>
+		</div>
+
+		<!-- Web Mobile: Content -->
+		<div data-role="main" class="ui-content" data-theme="c">
+		  <h1>Welcom to my-app</h1>
+		  <a class="ui-btn" href="#page-two" 
+		  data-transition="pop">Login</a>
+		</div>
+
+		<!-- Web Mobile: Footer -->
+		<div data-role="footer" data-position="fixed">
+		  <h1>Training</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="page-two">
+		<!-- Web Mobile: Header -->
+		<div data-role="header">
+	    	<h1>my app!</h1>
+		</div>
+
+		<!-- Web Mobile: Content -->
+		<div data-role="main" class="ui-content" data-them="c">
+		  <h1>Login Form</h1>
+		  <input type="text" placeholder="Username">
+		  <input type="password" placeholder="Password">
+		  <input type="submit" value="Login">
+		  <a class="ui-btn" href="#page-one" data-transition="slideup">Cancel</a>
+		  <a href="#registration-page" data-transition="slideup">Register</a>
+		</div>
+
+		<!-- Web Mobile: Footer -->
+		<div data-role="footer" data-position="fixed">
+		  <h1>Training</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="registration-page">
+		<div data-role="main" class="ui-content">
+			<h1>Registration form</h1>
+			<p>....all form details....</p>
+			<a class="ui-btn" href="#page-two" data-transition="slideup">Go to Login page</a>
+			<a class="ui-btn" href="#page-one" data-transition="slideup">Go to main page</a>
+		</div>
+	</div>
+	
+	</body>
+</html>

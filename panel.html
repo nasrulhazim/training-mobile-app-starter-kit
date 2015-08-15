@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="vendor/jquery-mobile/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jknns.min.css" />
+  		<link rel="stylesheet" href="vendor/jquery-mobile/themes/jquery.mobile.icons.min.css" />
+		<script src="vendor/jquery/jquery-1.11.3.min.js"></script>
+		<script src="vendor/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+
+		<!-- Web Mobile: Header -->
+		<div data-role="header">
+	    	<h1>my app!</h1>
+		</div>
+
+		<!-- Web Mobile: Content -->
+		<div data-role="main" class="ui-content" data-them="c">
+		  <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Open Panel</a>
+		</div>
+
+		<!-- Web Mobile: Footer -->
+		<div data-role="footer" data-position="fixed">
+		  <h1>Training</h1>
+		</div>
+
+		<!-- data-display="overlay | reveal | push" -->
+		<!-- data-position="left | right" -->
+		<div data-role="panel" id="mypanel" data-position="left" data-display="push">
+		    <div class="ui-panel-inner">
+		    	<h3>Left Panel: Overlay</h3>
+		    	<p>This panel is positioned on the left with the overlay display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p>
+
+		    	<p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+
+		    	<a href="#demo-links" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close panel</a>
+		    </div>
+		</div><!-- /panel -->
+		
+	</body>
+</html>
